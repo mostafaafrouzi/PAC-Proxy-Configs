@@ -15,57 +15,134 @@
 
 ---
 
-## **آموزش استفاده در افزونه SwitchyOmega**
 
-### ۱. نصب افزونه
-- افزونه را از [Chrome Web Store](https://chromewebstore.google.com/detail/padekgcemlokbadohgkifijomclgjgif) نصب کنید.
-- پس از نصب، آیکون افزونه در کنار نوار آدرس مرورگر نمایش داده می‌شود.
+# آموزش استفاده از فایل‌های PAC برای دور زدن سانسور و حفظ حریم خصوصی
 
-### ۲. تنظیم فایل PAC
-#### **ایجاد یک پروفایل جدید**
-1. روی آیکون افزونه کلیک کنید و وارد **Dashboard** شوید.
-2. در صفحه داشبورد، گزینه **Create Profile** را انتخاب کنید.
-3. نوع پروفایل را **PAC Script** انتخاب کرده و یک نام برای آن وارد کنید (مانند `Custom PAC`).
+فایل‌های PAC (Proxy Auto-Config) به شما امکان می‌دهند که ترافیک اینترنتی خود را از طریق یک سرور پروکسی هدایت کنید، به طوری که دسترسی شما به وب‌سایت‌های مختلف به روشی امن و بدون سانسور انجام شود. این فایل‌ها معمولاً برای جلوگیری از محدودیت‌های فیلترینگ، تحریم‌ها و بهبود امنیت و حریم خصوصی در اتصال اینترنتی استفاده می‌شوند.
 
-#### **وارد کردن فایل PAC**
-1. پس از ایجاد پروفایل، گزینه **Edit Profile** را انتخاب کنید.
-2. در فیلد **PAC Script URL**، آدرس یکی از فایل‌های PAC زیر را وارد کنید:
-   - [Canada.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Canada.pac)
-   - [France.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/France.pac)
-   - [Germany.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Germany.pac)
-   - [msmh.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/msmh.pac)
-   - [Netherland.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Netherland.pac)
-   - [Singapore.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Singapore.pac)
-   - [UK.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/UK.pac)
-   - [US-East.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/US-East.pac)
-   - [US-West.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/US-West.pac)
-3. روی دکمه **Apply Changes** کلیک کنید.
+در این مقاله، نحوه استفاده از فایل‌های PAC مختلف را به همراه افزونه Proxy SwitchyOmega در مرورگر کروم و همچنین نحوه استفاده از آن‌ها در دستگاه‌های اندروید و ویندوز آموزش می‌دهیم.
 
-#### **فعال کردن پروفایل PAC**
-1. به صفحه اصلی SwitchyOmega بازگردید.
-2. پروفایل `Custom PAC` را انتخاب کنید تا به حالت فعال درآید.
+**نکته مهم:** فایل‌های PAC مختلف، سرورهایی در کشورهای مختلف دارند. این موضوع می‌تواند بر سرعت، امنیت و دسترسی به وب‌سایت‌های مختلف تاثیر بگذارد. در ادامه، به معرفی برخی از این فایل‌ها و کشورهایی که سرورهای آن‌ها قرار دارند، پرداخته خواهد شد. بر اساس نیاز خود (از نظر سرعت یا دسترسی به محتوای خاص در کشور خاص)، شما می‌توانید یک گزینه مناسب را انتخاب کنید.
 
----
+## 1. لوکیشن فایل‌های PAC و کشور سرور
 
-## **استفاده از فایل PAC برای پروکسی کل سیستم**
+در اینجا، لوکیشن سرور و کشورهایی که فایل‌های PAC از آن‌ها می‌آیند آورده شده است:
 
-### **ویندوز**
-1. به تنظیمات پروکسی در ویندوز بروید:
-   - مسیر: `Settings > Network & Internet > Proxy` یا 
-   - مسیر: `Control Panel > Internet Options > Connections > LAN Settings`
-2. گزینه **Use automatic configuration script** را فعال کنید.
-3. آدرس یکی از فایل‌های PAC بالا را وارد کنید.
+1. **کانادا - سرور کانادا**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Canada.pac
 
-### **اندروید**
-#### **روش اول: تنظیم دستی در Wi-Fi**
-1. به تنظیمات Wi-Fi گوشی خود بروید.
-2. روی شبکه‌ای که به آن متصل هستید کلیک کرده و گزینه **Advanced** را انتخاب کنید.
-3. در بخش **Proxy**:
-   - حالت **Manual** را انتخاب کنید.
-   - آدرس فایل PAC را وارد کنید.
+2. **فرانسه - سرور فرانسه**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/France.pac
 
-#### **روش دوم: استفاده از اپلیکیشن‌های پروکسی**
-برنامه‌هایی مانند **Postern** یا **ProxyDroid** امکان استفاده از فایل‌های PAC را برای پروکسی کل سیستم فراهم می‌کنند.
+3. **آلمان - سرور آلمان**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Germany.pac
+
+4. **ایران - سرور ایران**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/msmh.pac
+
+5. **هلند - سرور هلند**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Netherland.pac
+
+6. **سنگاپور - سرور سنگاپور**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Singapore.pac
+
+7. **بریتانیا - سرور بریتانیا**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/UK.pac
+
+8. **ایالات متحده - شرق - سرور ایالات متحده (شرق)**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/US-East.pac
+
+9. **ایالات متحده - غرب - سرور ایالات متحده (غرب)**  
+   https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/US-West.pac
+
+**پیشنهاد:** بسته به نیاز خود، کشور یا سرور مورد نظر را انتخاب کنید:
+- برای دسترسی به محتوای آمریکای شمالی (مثل کانادا و ایالات متحده) از فایل‌های **Canada.pac** یا **US-East.pac / US-West.pac** استفاده کنید.
+- برای دسترسی به محتوای اروپایی (مثل فرانسه و آلمان)، **France.pac** یا **Germany.pac** گزینه‌های مناسبی هستند.
+- برای دسترسی به محتوای آسیایی، **Singapore.pac** بهترین انتخاب خواهد بود.
+
+## 2. استفاده از فایل‌های PAC در مرورگر کروم با افزونه Proxy SwitchyOmega
+
+### مرحله 1: نصب افزونه Proxy SwitchyOmega در کروم
+1. **باز کردن گوگل کروم:** ابتدا گوگل کروم را باز کنید.
+2. **نصب افزونه Proxy SwitchyOmega:**
+   - به لینک زیر بروید:
+     [Proxy SwitchyOmega در کروم وب استور](https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped)
+   - روی دکمه "Add to Chrome" کلیک کنید.
+   - پس از نصب، آیکون افزونه در بالای صفحه کروم ظاهر می‌شود.
+
+### مرحله 2: تنظیم Proxy SwitchyOmega برای استفاده از فایل‌های PAC
+1. **باز کردن تنظیمات افزونه:**
+   - روی آیکون افزونه Proxy SwitchyOmega در بالای صفحه کروم کلیک کنید.
+   - سپس "Options" را انتخاب کنید.
+   
+2. **اضافه کردن پروفایل جدید:**
+   - در صفحه تنظیمات، گزینه "New Profile" را انتخاب کنید.
+   - یک نام برای پروفایل خود وارد کنید (مثلاً "Canada PAC").
+   - در بخش "Proxy Server" گزینه "PAC" را انتخاب کنید.
+
+3. **وارد کردن آدرس فایل PAC:**
+   - در قسمت "PAC File URL"، آدرس یکی از فایل‌های PAC مورد نظر را وارد کنید. برای مثال:
+     ```
+     https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Canada.pac
+     ```
+   - در صورتی که نیاز به استفاده از فایل‌های دیگر دارید، آدرس آن‌ها را به ترتیب وارد کنید.
+
+4. **ذخیره تنظیمات:**
+   - بعد از وارد کردن URL فایل PAC، بر روی "Save" کلیک کنید.
+   - حالا پروفایل جدید شما در تنظیمات افزونه ذخیره می‌شود.
+
+### مرحله 3: فعال‌سازی پروکسی
+1. **فعال کردن پروکسی:**
+   - به صفحه اصلی کروم برگردید و دوباره روی آیکون افزونه Proxy SwitchyOmega کلیک کنید.
+   - پروفایل خود را از لیست پروفایل‌ها انتخاب کنید (مثلاً "Canada PAC").
+   - حالا تمامی ترافیک اینترنتی شما از طریق سرور پروکسی فایل PAC هدایت می‌شود.
+
+### مرحله 4: آزمایش و بررسی
+1. **آزمایش اتصال:** 
+   - برای آزمایش اینکه تنظیمات به درستی اعمال شده‌اند، به یک وب‌سایت فیلترشده یا تحریمی مراجعه کنید.
+   - اگر بدون مشکل به آن دسترسی پیدا کردید، تنظیمات شما به درستی کار می‌کنند.
+
+## 3. استفاده از فایل‌های PAC در ویندوز
+
+### مرحله 1: تنظیمات پروکسی در ویندوز
+1. **باز کردن تنظیمات پروکسی ویندوز:**
+   - وارد "Settings" شوید.
+   - به بخش "Network & Internet" بروید.
+   - روی "Proxy" کلیک کنید.
+   
+2. **فعال‌سازی پروکسی با استفاده از فایل PAC:**
+   - در بخش "Automatic proxy setup"، گزینه "Use setup script" را فعال کنید.
+   - در کادر "Script Address"، آدرس فایل PAC خود را وارد کنید. برای مثال:
+     ```
+     https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Canada.pac
+     ```
+
+3. **ذخیره تنظیمات:**
+   - تغییرات را ذخیره کنید و ویندوز را برای اعمال تغییرات مجدداً راه‌اندازی کنید.
+
+### مرحله 2: آزمایش و بررسی
+1. برای تست، به یک وب‌سایت فیلترشده یا تحریمی وارد شوید و ببینید که آیا می‌توانید به آن دسترسی پیدا کنید یا نه.
+
+## 4. استفاده از فایل‌های PAC در اندروید
+
+### مرحله 1: نصب اپلیکیشن ProxyDroid (یا هر اپلیکیشن مشابه)
+1. **دانلود و نصب ProxyDroid:**
+   - به فروشگاه گوگل پلی بروید و اپلیکیشن "ProxyDroid" را جستجو و نصب کنید.
+   
+2. **تنظیمات پروکسی در ProxyDroid:**
+   - وارد اپلیکیشن ProxyDroid شوید.
+   - گزینه "PAC" را انتخاب کنید.
+   - در قسمت "PAC URL"، آدرس فایل PAC خود را وارد کنید.
+     ```
+     https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Canada.pac
+     ```
+
+3. **فعال‌سازی پروکسی:**
+   - پروکسی را فعال کرده و تغییرات را ذخیره کنید.
+   
+### مرحله 2: آزمایش و بررسی
+1. برای تست، به یک وب‌سایت فیلترشده مراجعه کنید و بررسی کنید که آیا می‌توانید به آن دسترسی پیدا کنید یا نه.
+
 
 ---
 

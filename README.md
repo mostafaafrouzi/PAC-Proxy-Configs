@@ -30,15 +30,15 @@
 #### **وارد کردن فایل PAC**
 1. پس از ایجاد پروفایل، گزینه **Edit Profile** را انتخاب کنید.
 2. در فیلد **PAC Script URL**، آدرس یکی از فایل‌های PAC زیر را وارد کنید:
-   - [Canada.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/Canada.pac)
-   - [France.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/France.pac)
-   - [Germany.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/Germany.pac)
-   - [msmh.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/msmh.pac)
-   - [Netherland.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/Netherland.pac)
-   - [Singapore.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/Singapore.pac)
-   - [UK.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/UK.pac)
-   - [US-East.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/US-East.pac)
-   - [US-West.pac](https://github.com/mostafaafrouzi/PAC-Proxy-Configs/pac/US-West.pac)
+   - [Canada.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Canada.pac)
+   - [France.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/France.pac)
+   - [Germany.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Germany.pac)
+   - [msmh.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/msmh.pac)
+   - [Netherland.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Netherland.pac)
+   - [Singapore.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/Singapore.pac)
+   - [UK.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/UK.pac)
+   - [US-East.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/US-East.pac)
+   - [US-West.pac](https://raw.githubusercontent.com/mostafaafrouzi/PAC-Proxy-Configs/refs/heads/main/pac/US-West.pac)
 3. روی دکمه **Apply Changes** کلیک کنید.
 
 #### **فعال کردن پروفایل PAC**

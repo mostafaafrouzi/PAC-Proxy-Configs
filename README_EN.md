@@ -5,6 +5,12 @@
 
 # PAC Files for Proxy Configuration
 
+> [!WARNING]
+> **Project Deprecated (Read Only)**
+> 
+> This project **no longer works** because the free proxy servers (belonging to Epic Browser) hardcoded in the PAC files have been permanently shut down and blocked. The destination servers have been completely removed from the internet, making it impossible to connect to them. This repository is kept for archival purposes only (Read Only).
+
+
 This repository contains PAC files for automatic proxy configuration, which help you bypass internet restrictions and improve your browsing experience.
 
 ## **Features**
